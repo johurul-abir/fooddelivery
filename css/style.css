@@ -1,0 +1,830 @@
+/* google fonts  */
+/* seaweed Script font*/
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+/* font-family: 'Seaweed Script', cursive; */
+/* inter font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+
+/* global css  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+img{
+    width:100%;
+}
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#mobile{
+    display: none;
+}
+#destop{
+    display: block;
+}
+/*====================
+    custom css
+ ==================== */
+
+ /* nav bar css start */
+
+header{
+    background-color:#fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    position: sticky;
+    top:-1px;
+    z-index: 999;
+}
+
+header.navbar-brand img{
+    width: 150px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin: 0px 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #FF582E;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::after{
+    left:-5px;
+}
+.navbar-nav .nav-link::after{
+	content: " ";
+	position: absolute;
+	width: 70%;
+	height: 1px;
+	background: #FF582E;
+	bottom: 0px;
+	left: -100%;
+	transition: 0.3s ease-in-out;
+	margin-left:15%;
+
+}
+header.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo_bnt {
+    align-items: center!important;
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 13px
+}
+header .logo_bnt ul{
+    padding: 0px;
+    text-align: right;
+}
+header .logo_bnt ul li{
+    display: inline-block;
+}
+header .logo_bnt img{
+    width: 100%;
+}
+header .nav-button {
+    background-color: #000;
+    padding: 11px 21px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+header .nav-button:hover{
+    background-color: #FF582E;
+    color: #fff;
+}
+
+ /* nav bar css end */
+
+/* banner css */
+
+.banner{
+    padding: 100px 0px 50px 0;
+    background-color: #fff;
+}
+.banner h5{
+    font-family:'Seaweed Script';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+    margin: 0 0 16px 0;
+    color: #FF582E;
+}
+.banner h1{
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 72px;
+    margin: 0 0 22px 0;
+    color: #000;
+}
+.banner p {
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px 0;
+    color:#333;
+ }
+ .banner-content{
+    padding-right:150px;
+    }
+.banner .input_box {
+    width: 90%;
+    height: 65px;
+    background-color: #fff;
+    border: 1px solid #18C85F;
+    border-radius: 10px;
+ }
+ .banner .input_box button{
+    height: 63px;
+    border: 1px solid #18C85F;
+    border-radius: 0 9px 9px 0;
+    
+ }
+ .banner .input_box button a{
+    color: #fff;
+ }
+ .banner .input_box .map i {
+    color:#B1B1B1;
+    font-size: 20px;
+ }
+
+.banner h6{
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #838383;
+}
+.banner h6 button{
+    border: none;
+    color: #FF582E;
+    background-color: transparent;
+    font-weight: 600;
+}
+.banner img{
+    position: relative;
+    animation:banner_img 3s linear infinite;
+}
+@keyframes banner_img {
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
+/* feature-food section css  */
+.feature-food{
+    padding: 30px 0px;
+}
+.feature-food h2{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    color: #000;
+    padding: 50px 0px;
+}
+.feature-food h2 img{
+    width: 50px;
+    height: 60px;
+}
+.feature-food .card{
+    border: none;
+    margin: 70px 0 0 0 ;
+}
+.feature-food .card-body {
+    background: #F7F7F7;
+    border-radius: 24px;
+    padding: 20px 30px;
+    width: 300px;
+    position: relative;
+}
+.feature-food .card-body img{
+    width:113px;
+    display: block;
+    z-index: 999;
+    position: absolute;
+    bottom: 30px;
+    z-index: 100;
+
+}
+
+.feature-food .card-body h3{
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #171717;
+}
+.feature-food .card-body p{
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #969696;
+    margin: 0 0 10px 0;
+}
+.feature-food .card-body h6{
+    padding-bottom: 0px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FF4415;
+
+}
+
+/* carosole css part  */
+.feature-food .owl-carousel{
+text-align: center;
+}
+
+.feature-food .owl-carousel .item {
+    margin: 0 auto;
+    display: inline-block;
+}
+/* service sction css */
+.service{
+    padding: 50px 0px;
+    text-align: center;
+}
+.service .service-title h3{
+    font-family: Seaweed Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color:#FF4415;
+    margin-bottom: 8px;
+}
+.service .service-title h2{
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    color: #101010;
+}
+.service .service-item img{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    max-width: 120px;
+    max-height: 120px;
+    margin-bottom: 40px;
+}
+.service .service-item h3{
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.service .service-item p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+}
+
+/* offer section css */
+.offer {
+    padding: 50px 0px;
+}
+.offer .offer_img{
+    background-image: url(../img/offer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    padding: 50px;
+}
+.offer .offer_img h3 {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.offer .offer_img p {
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    opacity: 0.88;
+    color:#fff;
+}
+
+/* menu section css */
+.menu{
+    padding: 50px 0px;
+}
+.menu h3{
+    font-family: Seaweed Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color:#FF4415;
+    margin-bottom: 8px;
+}
+.menu h2{
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    color: #101010;
+}
+
+/* menu item css  */
+.menu .card{
+    border-radius: 20px;
+    border: 1px solid #EFEFEF;
+    transition: all 0.3s ease-in-out;
+}
+.menu .card:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid transparent;
+   
+}
+.menu .menu_item img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    width: auto;
+    height: 200px;
+}
+.menu .card p{
+    margin-bottom: 0;
+}
+.menu .menu_item ul{
+    padding-left: 0;
+    padding-top: 20px;
+}
+.menu .menu_item ul li{
+    display: inline-block;
+}
+.menu .menu_item ul li .fa-star{
+    color: #FEB618;
+}
+.menu .menu_item h3{
+    text-align: left;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    color: #181818;
+}
+.menu .menu_item .price_share ul{
+    margin-bottom: 0;
+    padding-top: 0;
+}
+.menu .menu_item .price_share ul li{
+    padding-top: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu .menu_item .price_share p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 1px;
+}
+.menu .price_share{
+    margin-bottom: 0;
+}
+.price_share .fa-gratipay{
+    width: 30px;
+    height: 30px;
+    background: #FF4415;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+.price_share .fa-share-alt-square{
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+.menu .menu_row_2, .menu .menu_row_3 {
+    margin-top: 25px;
+}
+.menu .seemore_btn {
+    text-align: center;
+}
+.menu button {
+    background-color: #1CCB62;
+    color: #fff;
+    margin-top: 50px;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 16px;
+    font-weight: 500;
+}
+.menu button p{
+    display: inline-block;
+}
+.menu button .fa-angle-right{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: green;
+    line-height: 30px;
+    border-radius: 5px;
+    margin: 10px 0 10px 15px;
+}
+
+
+/*==========================
+   pickup_point sectin css 
+===========================*/
+.pickup_point{
+    padding: 30px 0px;
+}
+.pickup_point_header{
+    padding: 10px 0 40px 0;
+}
+.pickup_point_header h3{
+    font-family: Seaweed Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #FF4415;
+    margin-bottom: 8px;
+}
+.pickup_point_header h2{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    color: #101010;
+    
+}
+.pickup_point .restaurent_point{
+    padding-bottom: 60px;
+}
+.pickup_point .restaurent_point h3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    color: #101010;
+   
+}
+.pickup_point .restaurent_point input{
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.005em;
+    color: #C7C7C7; 
+    opacity: 0.8;  
+}
+
+.pickup_point .restaurent_point img{
+    width: 18%;
+    float: right;
+    object-fit: cover;
+}
+
+.pickup_point .place h6{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.2em;
+    color: #36BD59;
+    text-transform: uppercase;
+}
+.pickup_point .place input{
+    border: none;
+    outline: none;
+    letter-spacing:1px;
+    color: #C7C7C7;
+    font-weight: 500;
+    font-size: 28px;
+    padding-bottom: 30px;
+    opacity: 0.8;
+
+}
+.pickup_point .place ul li{
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+}
+.pickup_point .place .fa-location-crosshairs{
+    color: #FF4415;
+    font-size: 18px;
+}
+.pickup_point .map{
+    text-align:center;
+}
+.pickup_point iframe{
+    width: 100%;
+    height: 450px;
+}
+/*==========================
+   blog sectin css 
+===========================*/
+.blog{
+    padding:50px 0;
+}
+.blog .blog_header{
+    text-align: center;
+}
+.blog .blog_header h3{
+    font-family: Seaweed Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color:#FF4415;
+    margin-bottom: 8px;
+}
+.blog .blog_header h2 {
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    color: #101010;
+    margin-bottom: 0px;
+}
+.blog .blog_header p{
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #646464;
+    margin-top: 16px;
+}
+.blog .card{
+    border: none;
+    background-color: #FFFFFF;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+ .blog .blog-contant{
+    padding: 30px;
+ } 
+ .blog .blog-contant h3{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 22px;
+    margin-bottom: 14px;
+    color: #1B1B1B;
+ }
+ .blog .blog-contant p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #939393;
+    margin-bottom: 0px;
+ }
+ .blog .blog-contant .fa-angle-right{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: green;
+    line-height: 30px;
+    border-radius: 5px;
+    margin: 10px 0 10px 15px;
+ }
+ .blog .blog-contant button {
+    background-color: #1CCB62;
+    color: #fff;
+    margin-top: 50px;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 16px;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+}
+
+/* app section css  */
+
+.app{
+    padding: 50px 0px;
+   
+}
+.app .img{
+    text-align: center;
+}
+.app img{
+    width:40%;
+}
+.app .app_contant h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #000;
+}
+.app .app_contant p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    padding: 20px 0px;
+}
+.app .app_btn button{
+    border: 1px solid #333;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #000;
+    font-weight: 400;
+}
+.app .app_btn button i{
+    padding-right: 15px;
+}
+
+/* newsletter section css  */
+
+.newsletter{
+    padding: 50px 0px;
+}
+.newsletter .card {
+    padding: 50px;
+    background:#FF4415;
+    background-size:cover;
+    border: none;
+    border-radius: 15px;
+}
+.newsletter .card h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.newsletter .card p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    opacity: 0.88;  
+    color: #fff;
+}
+.input_box {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+.input_box input {
+    border: none;
+    outline: none;
+    line-height: 60px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.input_box button{
+    border: none;
+    background: #28C04F;
+    color: #fff;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 0 10px 10px 0;
+    transition: 0.3s ease-in-out;
+}
+.input_box button:hover{
+    background:#18db48 ;
+}
+.input_box button i {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: #28C04f;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+/* country section css  */
+
+.country {
+    padding: 100px 0px;
+}
+.country h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    padding-bottom: 30px;
+}
+.country p {
+    font-size: 18px;
+    color: #666666;
+
+}
+
+/*===========================
+    footer section css 
+============================ */
+footer{
+    padding: 50px 0px;
+    background: #F8F8F8;
+}
+footer .title_part{
+    padding-right: 30px; 
+}
+footer .title_part img{
+    width: 55%;
+    margin-bottom: 35px
+}
+footer .title_part p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #767676;
+    margin-bottom: 40px;
+}
+footer .title_part ul li {
+    display:inline-block;
+}
+footer .title_part ul li i {
+    width: 30px;
+    height: 30px;
+    font-weight: 400;
+    border: none;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    transition: all 0.3s ease-in-out;
+}
+footer .title_part ul li i:hover {
+    background: #fff;
+    border: 1px solid #000;
+    color: #000;
+    margin-left: 0;
+}
+
+
+footer h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #030000;
+    margin-bottom: 40px;
+}
+footer a {
+    display: block;
+    font-size: 16px;
+    color: #767676 ;
+    margin-bottom: 17px;
+    transition: all 0.3s ease-in-out;
+}
+footer a:hover{
+    margin-left: 5px;
+    color: #000;
+}
+footer .title_part a:hover{
+    margin-left: 0px;
+}
